@@ -104,4 +104,5 @@ function clearImages_plugin_clearImages($i, $x) {
 function clearImages_plugin_deactivate() {
     deactivate_plugin(basename(__FILE__));
 }
+
 ?>
