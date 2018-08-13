@@ -20,7 +20,7 @@ function add_clearImages_menu_page() {
 function clearImages_settings_page() {
     ?>
     <div class="wrap">
-        <h2>Clear Images Plugin Panel</h2>
+        <h2>Simple Removal of Posted Images Plugin Panel</h2>
         <br class="clear">
         <div id="-plugin-buttons">
             <p>You can delete images from iniside of a range of posts. Enter the ID range of the posts and press Clear Images.</p>
