@@ -19,8 +19,6 @@ images from the content of multiple posts that makes this process much easier.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
 1. Upload the plugin files to the `/wp-content/plugins/simple-removal-of-posted-images` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Access the plugins menu through the Clear Images menu page to use the plugin.
