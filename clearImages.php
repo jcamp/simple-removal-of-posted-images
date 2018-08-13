@@ -3,7 +3,7 @@
 
   Plugin Name: Simple Removal of Posted Images
   Plugin URI: #
-  Description: Clear Images from all Posts
+  Description: Clear Images from the content of a range of posts.
   Version: 1.0
   License: GPL-3.0
 
