@@ -1,5 +1,5 @@
 === Simple removal of posted images ===
-Contributors: @tooulakis13
+Contributors: tooulakis13
 Tags: wordpress, wordpress-plugin, images, removal, post-content-images
 Requires at least: 4.6
 Tested up to: 4.9.8
