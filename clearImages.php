@@ -1,7 +1,7 @@
 <?php
 /*
 
-  Plugin Name: Clear Post's Images
+  Plugin Name: Simple Removal of Posted Images
   Plugin URI: #
   Description: Clear Images from all Posts
 
