@@ -41,14 +41,12 @@ function sropi_clearImages_settings_page() {
                 }
                 wp_nonce_field('test_button_clicked');
                 ?>
-
                 <label for="fvar">From: </label>
                 <input type="number" name="fromvar" placeholder="0" min="1" step="1" />
                 <label for="tvar">To: </label>
                 <input type="number" name="tovar" placeholder="10" step="1" min="1"/>
                 <input type="hidden" value="true" name="test_button" />
                 <?php submit_button('Clear Images'); ?>
-
             </form>
             <br class="clear">
         </div>
