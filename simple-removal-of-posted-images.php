@@ -9,11 +9,11 @@
 ?>
 
 <?php
-add_action('admin_menu', 'add_clearImages_menu_page');
-function add_clearImages_menu_page() {
-    add_menu_page('Clear Images', 'Clear Images', 'manage_options', 'clear_post_images', 'clearImages_settings_page');
+add_action('admin_menu', 'sropi_add_clearImages_menu_page');
+function sropi_add_clearImages_menu_page() {
+    add_menu_page('Clear Images', 'Clear Images', 'manage_options', 'clear_post_images', 'sropi_clearImages_settings_page');
 }
-function clearImages_settings_page() {
+function sropi_clearImages_settings_page() {
     ?>
     <div class="wrap">
         <h2>Simple Removal of Posted Images Plugin Panel</h2>
@@ -29,7 +29,7 @@ function clearImages_settings_page() {
                         $from = $_POST['fromvar'];
                         $to = $_POST['tovar'];
                         if($from >= 0 && $to >= 0) {
-                            clearImages_plugin_clearImages($from, $to);
+                            sropi_clearImages_plugin_clearImages($from, $to);
                         } else {
                             $newmsg = "Please enter a value greater or equal than 0.";
                         echo "<script type='text/javascript'>alert('$newmsg');</script>";
@@ -55,7 +55,7 @@ function clearImages_settings_page() {
     </div>
     <?php
 }
-function clearImages_plugin_clearImages($i, $x) {
+function sropi_clearImages_plugin_clearImages($i, $x) {
     $valuesnum = 0;
     $idarray = '';
     if ($i < $x) {
@@ -91,8 +91,5 @@ function clearImages_plugin_clearImages($i, $x) {
     }
     $message = "Content Updated";
     echo "<script type='text/javascript'>alert('$message');</script>";
-}
-function clearImages_plugin_deactivate() {
-    deactivate_plugin(basename(__FILE__));
 }
 ?>
