@@ -26,8 +26,8 @@ function sropi_clearImages_settings_page() {
                 if (isset($_POST['test_button']) && check_admin_referer('test_button_clicked')) {
                     // the button has been pressed AND we've passed the security check
                     if (isset($_POST['fromvar']) && isset($_POST['tovar']) && !empty($_POST['fromvar']) && !empty($_POST['tovar'])) {
-                        $from = $_POST['fromvar'];
-                        $to = $_POST['tovar'];
+                        $from = sanitize_text_field($_POST['fromvar']);
+                        $to = sanitize_text_field($_POST['tovar']);
                         if($from >= 0 && $to >= 0) {
                             sropi_clearImages_plugin_clearImages($from, $to);
                         } else {
