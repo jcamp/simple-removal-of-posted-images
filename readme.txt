@@ -23,3 +23,9 @@ images from the content of multiple posts that makes this process much easier.
 through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Access the plugins menu through the Clear Images menu page to use the plugin.
+
+== Changelog ==
+ 
+
+ 
+== Upgrade Notice ==
