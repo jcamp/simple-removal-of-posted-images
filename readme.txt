@@ -1,5 +1,5 @@
 === Simple removal of posted images ===
-Contributors: tooulakis13
+Contributors: colomet, tooulakis13
 Tags: wordpress, wordpress-plugin, images, removal, post-content-images
 Requires at least: 4.6
 Tested up to: 4.9.8
@@ -17,6 +17,8 @@ you will find two textboxes where you can input the range of the posts IDs that 
 content, and click the Clear Images button to remove them instantly. A clear and straight forward approach, to remove 
 images from the content of multiple posts that makes this process much easier.
 
+https://github.com/my-language-skills/simple-removal-of-posted-images
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/simple-removal-of-posted-images` directory, or install the plugin 
@@ -25,7 +27,8 @@ through the WordPress plugins screen directly.
 3. Access the plugins menu through the Clear Images menu page to use the plugin.
 
 == Changelog ==
- 
+
+1.0 Initial release.
 
  
 == Upgrade Notice ==
