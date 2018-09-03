@@ -11,7 +11,7 @@
 <?php
 add_action('admin_menu', 'sropi_add_clearImages_menu_page');
 function sropi_add_clearImages_menu_page() {
-    add_menu_page('Clear Images', 'Clear Images', 'manage_options', 'clear_post_images', 'sropi_clearImages_settings_page');
+    add_menu_page('Clear Images', 'Clear Images', 'manage_options', 'sropi_clear_post_images', 'sropi_clearImages_settings_page');
 }
 function sropi_clearImages_settings_page() {
     ?>
@@ -21,13 +21,13 @@ function sropi_clearImages_settings_page() {
         <div id="-plugin-buttons">
             <p>You can delete images from iniside of a range of posts. Enter the ID range of the posts and press Clear Images.</p>
             <br class="clear">
-            <form action="admin.php?page=clear_post_images" method="post">
+            <form action="admin.php?page=sropi_clear_post_images" method="post">
                 <?php
-                if (isset($_POST['test_button']) && check_admin_referer('test_button_clicked')) {
+                if (isset($_POST['sropi_test_button']) && check_admin_referer('sropi_test_button_clicked')) {
                     // the button has been pressed AND we've passed the security check
-                    if (isset($_POST['fromvar']) && isset($_POST['tovar']) && !empty($_POST['fromvar']) && !empty($_POST['tovar'])) {
-                        $from = sanitize_text_field($_POST['fromvar']);
-                        $to = sanitize_text_field($_POST['tovar']);
+                    if (isset($_POST['sropi_fromvar']) && isset($_POST['sropi_tovar']) && !empty($_POST['sropi_fromvar']) && !empty($_POST['sropi_tovar'])) {
+                        $from = sanitize_text_field($_POST['sropi_fromvar']);
+                        $to = sanitize_text_field($_POST['sropi_tovar']);
                         if($from >= 0 && $to >= 0) {
                             sropi_clearImages_plugin_clearImages($from, $to);
                         } else {
@@ -39,13 +39,13 @@ function sropi_clearImages_settings_page() {
                         echo "<script type='text/javascript'>alert('$msg');</script>";
                     }
                 }
-                wp_nonce_field('test_button_clicked');
+                wp_nonce_field('sropi_test_button_clicked');
                 ?>
-                <label for="fvar">From: </label>
-                <input type="number" name="fromvar" placeholder="0" min="1" step="1" />
-                <label for="tvar">To: </label>
-                <input type="number" name="tovar" placeholder="10" step="1" min="1"/>
-                <input type="hidden" value="true" name="test_button" />
+                <label for="sropi_fvar">From: </label>
+                <input type="number" name="sropi_fromvar" placeholder="0" min="1" step="1" />
+                <label for="sropi_tvar">To: </label>
+                <input type="number" name="sropi_tovar" placeholder="10" step="1" min="1"/>
+                <input type="hidden" value="true" name="sropi_test_button" />
                 <?php submit_button('Clear Images'); ?>
             </form>
             <br class="clear">
@@ -87,7 +87,7 @@ function sropi_clearImages_plugin_clearImages($i, $x) {
         }
         $counter++;
     }
-    $message = "Content Updated";
+    $message = $x . "Content Updated" . $i;
     echo "<script type='text/javascript'>alert('$message');</script>";
 }
 ?>
