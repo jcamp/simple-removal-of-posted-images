@@ -7,7 +7,6 @@
   License: GPL-3.0
  */
 ?>
-
 <?php
 add_action('admin_menu', 'sropi_add_clearImages_menu_page');
 function sropi_add_clearImages_menu_page() {
