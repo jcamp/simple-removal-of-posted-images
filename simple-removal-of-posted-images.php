@@ -124,13 +124,13 @@ function sropi_clearImages_plugin_clearImages($from, $to){
  *
  * @return void
  */
-	function smplads_load_plugin_textdomain() {
-    load_plugin_textdomain( 'simple-advertising', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+	function sropi_load_plugin_textdomain() {
+    load_plugin_textdomain( 'simple-removal-of-posted-images', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
 /**
  * Internalization
  * Called when the activated plugin has been loaded
  */
-add_action( 'plugins_loaded', 'smplads_load_plugin_textdomain' );
+add_action( 'plugins_loaded', 'sropi_load_plugin_textdomain' );
 
 ?>
