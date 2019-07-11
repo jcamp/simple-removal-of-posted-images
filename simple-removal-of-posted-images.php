@@ -1,18 +1,30 @@
 <?php
-/*
-  Plugin Name: Simple Removal of Posted Images
-  Plugin URI: https://github.com/my-language-skills/simple-removal-of-posted-images
-  Description: Clear Images from the content of a range of posts.
-  Version: 1.0.1
-  Author: My Language Skills team
-  Author URI: https://github.com/my-language-skills
-  License: GPL-3.0
-  Text Domain: simple-removal-of-posted-images
-  Domain Path: /languages
- */
-?>
 
-<?php
+/**
+ * Simple Removal of Posted Images
+ *
+ * This file is read by WordPress to generate the plugin information in the plugin
+ * admin area. This file also includes all of the dependencies used by the plugin,
+ * registers the activation and deactivation functions, and defines a function
+ * that starts the plugin.
+ *
+ * @link              https://github.com/my-language-skills/simple-removal-of-posted-images
+ * @since             1.0
+ * @package           extensions-for-pressbooks
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Simple Removal of Posted Images
+ * Plugin URI:        https://github.com/my-language-skills/simple-removal-of-posted-images
+ * Description:       Small enhancement for Pressbooks main plugin
+ * Version:           1.0.1
+ * Author:            My Language Skills team
+ * Author URI:        https://github.com/my-language-skills/
+ * License:           GPL 3.0
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
+ * Text Domain:       simple-removal-of-posted-images
+ * Domain Path:       /languages
+ */
+
 /* Runs after the basic admin panel menu structure */
 add_action('admin_menu', 'sropi_add_clearImages_menu_page');
 /* Create the menu */
