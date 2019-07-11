@@ -1,6 +1,7 @@
 === Simple removal of posted images ===
 Contributors: colomet, tooulakis13, davideC00
-Tags: wordpress, wordpress-plugin, images, removal, post-content-images
+Donate link: https://opencollective.com/mylanguageskills
+Tags: images, media, thumbnail, removal, post-content-images, wordpress plugin
 Requires at least: 4.6
 Tested up to: 5.2.2
 Requires PHP: 5.6
@@ -22,7 +23,7 @@ https://github.com/my-language-skills/simple-removal-of-posted-images
 
 == Installation ==
 
-1. Upload the plugin in your plugin wordpress folder /wp-content/plugins/
+1. Upload the plugin in your plugin wordpress folder `/wp-content/plugins/simple-removal-of-posted-images/`directory, or install the plugin
 2. Activate it from 'Plugins page' in your website.
 3. Access the plugins menu through the Clear Images menu page to use the plugin.
 
