@@ -27,7 +27,14 @@
 
 /* Runs after the basic admin panel menu structure */
 add_action('admin_menu', 'sropi_add_clearImages_menu_page');
-/* Create the menu */
+
+/**
+* Create the menu.
+*
+* @since
+*
+*/
+
 function sropi_add_clearImages_menu_page() {
     add_menu_page(__('Clear Images', 'simple-removal-of-posted-images'),
      __('Clear Images', 'simple-removal-of-posted-images'),
@@ -35,12 +42,12 @@ function sropi_add_clearImages_menu_page() {
 }
 
 /**
- * Creates the options for  'Clear Images' menu
- *
- * @since 1.0.0
- * @author tooulakis13
- *
- */
+* Creates the options for  'Clear Images' menu.
+*
+* @since 1.0
+*
+*/
+
 function sropi_clearImages_settings_page() {
     ?>
     <div class="wrap">
@@ -83,17 +90,18 @@ function sropi_clearImages_settings_page() {
 }
 
 /**
- * Deletes images in the posts removing the <img> tag
+ * Deletes images in the posts removing the <img> tag.
  *
  * @param int $from start of the range
  * @param int $to end of the range
  *
  * @since 1.0.0
  * @since 1.0.1.1 fixed overflow and improvements in code readability
- * @author tooulakis13, davideC00
  *
  * @return void
+ *
  */
+
 function sropi_clearImages_plugin_clearImages($from, $to){
   if ($from > $to){
     //swap variables
@@ -126,22 +134,22 @@ function sropi_clearImages_plugin_clearImages($from, $to){
 }
 
 /**
- * Internalization
- * It loads the MO file for plugin's translation
+ * Internalization.
+ * It loads the MO file for plugin's translation.
  *
  * @param
  *
  * @since 1.0.1
- * @author Davide Cazzorla @davideC00
  *
  * @return void
+ *
  */
 	function sropi_load_plugin_textdomain() {
     load_plugin_textdomain( 'simple-removal-of-posted-images', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
 /**
- * Internalization
- * Called when the activated plugin has been loaded
+ * Internalization.
+ * Called when the activated plugin has been loaded.
  */
 add_action( 'plugins_loaded', 'sropi_load_plugin_textdomain' );
 
