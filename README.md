@@ -4,7 +4,7 @@
 * Donate link: https://opencollective.com/mylanguageskills
 * Tags: wordpress, wordpress-plugin, images, removal, post-content-images
 * Requires at least: 4.6
-* Tested up to: 5.2.2
+* Tested up to: 4.9.9
 * Requires PHP: 5.2.4
 * Stable tag: 1.0.1
 * License: GNU 3.0
@@ -22,7 +22,7 @@ This is straight forward approach that makes the process of deleting images from
 
 ## Installation
 
-1. Upload the plugin in your plugin wordpress folder /wp-content/plugins/ 
+1. Upload the plugin in your plugin wordpress folder /wp-content/plugins/
 2. Activate it from 'Plugins page' in your website.
 3. Access the plugins menu through the Clear Images menu page to use the plugin.
 
