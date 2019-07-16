@@ -11,6 +11,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Removes all the inserted images in the content section of the posts.
 
+**NO Compatible with Gutenberg!**
+
 == Description ==
 
 This plugin, enables you to remove all images from the content of a range of posts.

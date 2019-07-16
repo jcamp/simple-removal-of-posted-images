@@ -1,14 +1,15 @@
 # Simple removal of posted images
 
-* Contributors: colomet, tooulakis13, davideC00
+* Contributors: @colomet, @tooulakis13, @davideC00
 * Donate link: https://opencollective.com/mylanguageskills
-* Tags: wordpress, wordpress-plugin, images, removal, post-content-images
-* Requires at least: 4.6
+* Tags: images, media, thumbnail, removal, post-content-images, wordpress plugin
+* Requires at least: 3.0.1
 * Tested up to: 4.9.9
-* Requires PHP: 5.2.4
+* Requires PHP: 5.6
 * Stable tag: 1.0.1
-* License: GNU 3.0
+* License: GPLv3 or later
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+* Gutemberg: NO compatible
 
 Removes all the inserted images in the content section of the posts.
 
