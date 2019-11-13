@@ -1,5 +1,5 @@
 === Simple removal of posted images ===
-Contributors: colomet, tooulakis13, davideC00
+Contributors: colomet, tooulakis13, dcazzorla
 Donate link: https://opencollective.com/mylanguageskills
 Tags: images, media, thumbnail, removal, post-content-images, wordpress plugin
 Requires at least: 3.0.1
